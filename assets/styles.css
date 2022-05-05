@@ -123,6 +123,13 @@ nav li{
     cursor: pointer;
 }
 
+.logoutbutton{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 .criaCompromisso{
     display: block;
     width: 500px;
@@ -133,7 +140,7 @@ nav li{
     align-items: center;
 }
 
-.site-form input, .site-form textarea{
+.site-form input, .site-form textarea, .site-form select{
     display: block;
     margin: 20px 0 10px 0;
     text-align: center;
@@ -151,6 +158,13 @@ nav li{
 }
 
 .errorlist li{
+    padding: 10px;
+    border: 1px solid #ff5722;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.errormsg{
     padding: 10px;
     border: 1px solid #ff5722;
     color: #ff5722;
