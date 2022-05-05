@@ -1,0 +1,25 @@
+{% extends 'base_layout.html'%}
+
+{% block content %}
+<header>
+        <h2>Meu Compromisso</h2>
+        <nav>
+        <li>
+                <a class="editacomprbotao" href="{% url 'compromisso:edita' comp_id=compromisso.id %}">edit</a>
+                <a class="excluicomprbotao" href="{% url 'compromisso:deleta' comp_id=compromisso.id %}">delete</a>
+        </li>
+        </nav>
+</header>
+
+<div class="compromisso-visualiza-wrapper">
+        <div class="compromisso-visualiza">
+                <h2>{{ compromisso.nome }}</h2>
+                <p>Início: {{ compromisso.data_inicial }}</p>
+                <p>Fim: {{ compromisso.data_final }}</p>
+                <p>Local: {{ compromisso.local }}</p>
+                <p>Status: {{ compromisso.status }}</p>
+                <p>{{ compromisso.obs }}</p>
+        </div>
+</div>
+
+{% endblock %}
