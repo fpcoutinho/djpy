@@ -56,8 +56,8 @@ def compromisso_cria(request):
                 instance.save()
                 return redirect('compromisso:list')
             except forms.ValidationError as e:
-                erro = messages.error(request, ''.join(e.messages))
-            return render(request, 'compromisso/compromisso_cria.html', {'form':form, 'erro':erro})
+                form.add_error('data_final', e.message)
+            return render(request, 'compromisso/compromisso_cria.html', {'form':form})
     else:
         form = compr_forms.CriaCompromissoForm()
     return render(request, 'compromisso/compromisso_cria.html', {'form': form})
@@ -77,8 +77,7 @@ def compromisso_edita(request, comp_id):
                 instance.save()
                 return redirect('compromisso:list')
         except forms.ValidationError as e:
-            erro = messages.error(request, ''.join(e.messages))
-            return render(request, 'compromisso/compromisso_edita.html', {'compromisso': compromisso,  'form':form, 'erro':erro})
+            form.add_error('data_final', e.message)
     return render(request, 'compromisso/compromisso_edita.html', {'compromisso': compromisso,  'form':form})
     
 
