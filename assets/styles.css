@@ -3,6 +3,7 @@ body{
     background-image: url(/static/stars.png);
     background-repeat-y: no-repeat;
     color: #fff;
+    padding: 0 2px 0 2px;
 }
 
 body*{
@@ -99,6 +100,7 @@ a, a:hover, a:visited{
 
 .wrapper{
     margin: 0 auto;
+    padding: 20px;
 }
 
 header{
@@ -132,7 +134,7 @@ nav li{
 
 .criaCompromisso{
     display: block;
-    width: 500px;
+    width: 5000px;
     border: 1px solid #ffffff4f;
     margin: 20px;
     padding: 20px;
