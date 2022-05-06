@@ -16,7 +16,7 @@
     <div class="compromissos">
             {% for compromisso in compromissos %}
                 <div class="compromisso">
-                    <h2><a href="{% url 'compromisso:visualiza' comp_id=compromisso.id %}">{{ compromisso.nome }}</a></h2>
+                    <p><h2><a href="{% url 'compromisso:visualiza' comp_id=compromisso.id %}">{{ compromisso.nome }}</a></h2></p>
                     <p>Início: {{ compromisso.data_inicial }}</p>
                     <p>Fim: {{ compromisso.data_final }}</p>
                     <p>Local: {{ compromisso.local }}</p>

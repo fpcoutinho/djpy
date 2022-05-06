@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 body{
     background-color: #0f121f;
+    color: #fff;
     background-image: url(/static/stars.png);
     background-repeat-y: no-repeat;
-    color: #fff;
-    padding: 0 2px 0 2px;
+    padding: 0 1px 0 1px;
 }
 
 body*{
     font-family: Ubuntu;
+}
+
+input[required="required"]::after {
+    content: "*";
+    color: red;
 }
 
 p.obs{
@@ -25,8 +32,9 @@ p.obs:hover{
 }
 
 img{
-    width: 50px;
+    width: 60px;
     height: auto;
+    vertical-align: bottom;
 }
 
 .loginheader{
@@ -54,12 +62,12 @@ img{
     border: 1px solid #ffffff4f;
 }
 .compromisso{
-    width: 300px;
+    width: 350px;
     border-radius: 20px;
     float: left;
     box-shadow: -2px 3px #a3d1e654;
     border: 2px solid #a3d1e6;
-    margin: 20px;
+    margin: 30px;
     padding: 20px;
 }
 
@@ -70,7 +78,7 @@ img{
 }
 
 .compromisso-visualiza{
-    width: 600px;
+    width: 500px;
     border-radius: 20px;
     align-self: center;
     text-align: center;
@@ -79,23 +87,29 @@ img{
     padding: 30px;
 }
 
-h1,h2,h3,h4,h5{
+
+h1 a{
+    color: #fff;
+    font-family: Pacifico;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+h2,h3,h4,h5{
+    font-family: Helvetica;
     font-weight: normal;
     margin: 0;
 }
 
-h1{
-    color: #7ec4bd;
-    font-family: Trebuchet MS;
-}
-
-h2,h3,h4,h5{
-    font-family: Helvetica;
+input, textarea{
+    color: #0f121f;
 }
 
 a, a:hover, a:visited{
-    color: #fff;
     text-decoration: none;
+    color: #fff;
 }
 
 .wrapper{
@@ -154,12 +168,12 @@ nav li{
 
 .helptext, .helptext ul{
     margin: 0 auto 20px;
-    color: #bbb;
+    color: rgb(255, 0, 0);
     font-size: 0.85em;
     display: block;
 }
 
-.errorlist li{
+.help-block strong, .errorlist li{
     padding: 10px;
     border: 1px solid #ff5722;
     color: #ff5722;
@@ -171,4 +185,11 @@ nav li{
     border: 1px solid #ff5722;
     color: #ff5722;
     margin: 10px 0;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 40px 0 0 0;
 }
