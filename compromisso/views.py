@@ -26,8 +26,9 @@ def compromisso_visualiza(request, comp_id):
 
 def checaData(request, compromissos):
     # valida as datas do form
-    dataini = datetime.strptime(request.POST['data_inicial'], '%d/%m/%Y %H:%M:%S')
-    datafim = datetime.strptime(request.POST['data_final'], '%d/%m/%Y %H:%M:%S')
+    dataini = datetime.strptime(request.POST['data_inicial'], '%Y-%m-%dT%H:%M')
+    datafim = datetime.strptime(request.POST['data_final'], '%Y-%m-%dT%H:%M')
+    
     if dataini < datetime.now():
         raise forms.ValidationError('Você está tentando criar um compromisso para uma data que já passou')
     if dataini > datafim:

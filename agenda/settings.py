@@ -123,6 +123,8 @@ LANGUAGE_CODE = 'pt-BR'
 
 TIME_ZONE = 'America/Bahia'
 
+DATETIME_FORMAT = '%d/%m/%Y %H:%M'
+
 USE_I18N = True
 
 USE_TZ = False

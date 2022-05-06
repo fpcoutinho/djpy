@@ -103,10 +103,6 @@ h2,h3,h4,h5{
     margin: 0;
 }
 
-input, textarea{
-    color: #0f121f;
-}
-
 a, a:hover, a:visited{
     text-decoration: none;
     color: #fff;
@@ -157,6 +153,7 @@ nav li{
 }
 
 .site-form input, .site-form textarea, .site-form select{
+    color: #0f121f;
     display: block;
     margin: 20px 0 10px 0;
     text-align: center;
