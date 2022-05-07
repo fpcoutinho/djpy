@@ -184,7 +184,12 @@ nav li{
     margin: 10px 0;
 }
 
-.btn-default {
+.btn-outline-secondary{
+    background-color: #ebebeb;
+    color:#44494c;
+}
+
+.btn.btn-default.btn-sm{
     color: #fff;
     background-color: transparent;
     border-color: transparent;
