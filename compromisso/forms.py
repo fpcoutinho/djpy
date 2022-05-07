@@ -13,8 +13,8 @@ class CriaCompromissoForm(forms.ModelForm):
 
 
 class EditaCompromissoForm(forms.ModelForm):
-    data_inicial = forms.DateTimeField(widget=DateTimeInput(attrs={'type': 'datetime-local'}),input_formats='%d/%m/%Y %H:%M')
-    data_final = forms.DateTimeField(widget=DateTimeInput(attrs={'type': 'datetime-local'}),input_formats='%d/%m/%Y %H:%M')
+    data_inicial = forms.DateTimeField(widget=DateTimeInput(format='%d/%m/%Y %H:%M', attrs={'type': 'datetime-local'}), input_formats='%d/%m/%Y %H:%M')
+    data_final = forms.DateTimeField(widget=DateTimeInput(format='%d/%m/%Y %H:%M', attrs={'type': 'datetime-local'}),input_formats='%d/%m/%Y %H:%M')
 
     class Meta:
         model = models.Compromisso
