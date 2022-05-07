@@ -2,14 +2,16 @@
 
 {% block content %}
     <header>
-        <h2>Meus Compromissos</h2>
+        <div class="meuscompromissosdiv">
+            <h2>Meus Compromissos</h2>
+        </div>
         <nav>
-        <li>
-            <a class="criacomprbotao" href="{% url 'compromisso:cria' %}">
-                <span class="glyphicon glyphicon-plus-sign"></span>
-                Novo
-            </a>
-        </li>
+            <li>
+                <a class="botao-icon" href="{% url 'compromisso:cria' %}">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                    Novo
+                </a>
+            </li>
         </nav>
     </header>
 

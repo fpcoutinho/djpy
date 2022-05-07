@@ -12,11 +12,6 @@ body*{
     font-family: Ubuntu;
 }
 
-input[required="required"]::after {
-    content: "*";
-    color: red;
-}
-
 p.obs{
     white-space: nowrap;
     overflow: hidden;
@@ -105,7 +100,14 @@ h2,h3,h4,h5{
 
 a, a:hover, a:visited{
     text-decoration: none;
+}
+
+h2 a{
     color: #fff;
+}
+
+a:hover{
+    color: #d3d1d1
 }
 
 .wrapper{
@@ -129,17 +131,20 @@ nav li{
     margin-left: 20px;
 }
 
-.criacomprbotao{
+.botao-icon{
     background: none;
     color: #fff;
+    cursor: pointer;
+    size-adjust: 2px;
     cursor: pointer;
 }
 
-.logoutbutton{
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
+.glyphicon:hover{
+    color: #d3d1d1;
+}
+
+.meuscompromissosdiv{
+    display: inline-block;
 }
 
 .criaCompromisso{
@@ -162,6 +167,7 @@ nav li{
     margin-right: auto;
     padding: 10px;
 }
+
 
 .helptext, .helptext ul{
     margin: 0 auto 20px;
